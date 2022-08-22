@@ -1,0 +1,16 @@
+{
+  "name": "@cloudbourn/scheduler-docs",
+  "version": "1.0.0",
+  "description": "Documentation and guides for lingering.io",
+  "main": "index.js",
+  "author": "Joakim Hedlund <joakim.hedlund@cloudbourn.com>",
+  "repository": "github:Cloudbourn/scheduler-docs",
+  "scripts": {
+    "dev": "vuepress dev .",
+    "build": "vuepress build ."
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}
