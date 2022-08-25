@@ -4,7 +4,7 @@ module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: 'Vuepress Docs Boilerplate',
+  title: 'Lingering I/O Documentation',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
@@ -16,7 +16,7 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/config/#head
    */
   head: [
-    ['meta', { name: 'theme-color', content: '#3eaf7c' }],
+    ['meta', { name: 'theme-color', content: '#4c14e9' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
   ],
@@ -27,33 +27,49 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
-    repo: '',
-    editLinks: false,
+    logo: '/lingering-logo.svg',
+    repo: 'https://github.com/Cloudbourn/scheduler',
+    repoLabel: 'Scheduler on Github',
+    editLinks: true,
+    editLinkText: 'Edit this page on Github',
+    docsRepo: 'Cloudbourn/scheduler-docs',
+    docsBranch: 'main',
     docsDir: '',
-    editLinkText: '',
+
     lastUpdated: false,
+    search: false,
     nav: [
       {
         text: 'Guide',
-        link: '/guide/',
+        link: '/guide/introduction',
       },
       {
-        text: 'Config',
-        link: '/config/'
+        text: 'Reference',
+        link: '/reference/'
       },
       {
-        text: 'VuePress',
-        link: 'https://v1.vuepress.vuejs.org'
+        text: 'Docs on Github',
+        link: 'https://github.com/Cloudbourn/scheduler-docs'
       }
     ],
     sidebar: {
       '/guide/': [
         {
-          title: 'Guide',
+          title: '🚀 Getting Started',
+          path: '/guide/introduction.html',
           collapsable: false,
           children: [
-            '',
-            'using-vue',
+            'introduction',
+            'quick-start',
+            'contact'
+          ]
+        },
+        {
+          title: '💡 Concepts',
+          collapsable: false,
+          children: [
+            'api',
+            'billing'
           ]
         }
       ],
