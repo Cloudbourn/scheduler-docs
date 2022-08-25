@@ -6,6 +6,7 @@
   "author": "Joakim Hedlund <joakim.hedlund@cloudbourn.com>",
   "repository": "github:Cloudbourn/scheduler-docs",
   "scripts": {
+    "prepare": "husky install",
     "dev": "vuepress dev .",
     "build": "vuepress build ."
   },
