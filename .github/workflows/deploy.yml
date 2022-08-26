@@ -38,6 +38,8 @@ jobs:
     name: Deploy Github Pages artifact
     needs: build
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
     steps:
     - name: Deploy to GitHub Pages
       id: deployment
