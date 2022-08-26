@@ -5,6 +5,11 @@ on:
     branches:
       - main
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   build:
     name: Build static site
@@ -33,10 +38,6 @@ jobs:
     name: Deploy Github Pages artifact
     needs: build
     runs-on: ubuntu-latest
-    # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
-    permissions:
-      pages: write
-      id-token: write
     steps:
     - name: Deploy to GitHub Pages
       id: deployment
