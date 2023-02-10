@@ -12,8 +12,8 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@commitlint/cli": "^17.0.3",
-    "@commitlint/config-conventional": "^17.0.3",
+    "@cloudbourn/commitlint-config": "^1.0.0",
+    "@commitlint/cli": "^17.4.2",
     "husky": "^8.0.1",
     "vuepress": "^1.5.3"
   }
